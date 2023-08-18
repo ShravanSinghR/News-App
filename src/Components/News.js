@@ -155,7 +155,7 @@ export class News extends Component {
                 <h1 className='text-center' style={{ fontSize: "6vh" , marginTop:"70px"}}>Top {this.props.category.slice(0, 1).toUpperCase() + this.props.category.slice(1)} Headlines</h1>
                 {this.state.loading && <Spinner />}
                 <div className="row">
-                    {!this.state.loading && this.state.articles.map((element) => {
+                    {!this.state.loading && this.state?.articles.map((element) => {
                         return <div className='col-md-4 d-flex justify-content-centre' key={element.url} >
                             <NewsItem title={element.title ? element.title > 50 ? element.title : element.title.slice(0, 70) : "  "}
                                 description={element.description ? element.description > 88 ? element.description : element.description.slice(0, 100) + "..." : " "}

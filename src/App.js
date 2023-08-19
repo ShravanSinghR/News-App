@@ -9,7 +9,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class App extends Component {
   PageSize=12;

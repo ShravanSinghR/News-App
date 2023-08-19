@@ -7,19 +7,19 @@ import PropTypes from 'prop-types'
 export class News extends Component {
 
     //props
-    static defaultProps = {
-        country: "in",
-        pageSize: 9,
-        category: "genral",
-        material: "#DC3545",
-        totalResults: 0,
-    }
+    // static defaultProps = {
+    //     country: "in",
+    //     pageSize: 9,
+    //     category: "genral",
+    //     material: "#DC3545",
+    //     totalResults: 0,
+    // }
 
-    static defaultProps = {
-        country: PropTypes.string,
-        pageSize: PropTypes.bool,
-        category: PropTypes.string,
-    }
+    // static defaultProps = {
+    //     country: PropTypes.string,
+    //     pageSize: PropTypes.bool,
+    //     category: PropTypes.string,
+    // }
 
 
     //Example output

@@ -159,9 +159,9 @@ export class News extends Component {
                         console.log(this.state.articles);
                         debugger;
                         return <div className='col-md-4 d-flex justify-content-centre' key={element.url} >
-                            <NewsItem title={element.title ? element.title > 50 ? element.title : element.title.slice(0, 70) : "  "}
-                                description={element.description ? element.description > 88 ? element.description : element.description.slice(0, 100) + "..." : " "}
-                                imageUrl={element.urlToImage} newsUrl={element.url} date={element.publishedAt} source={element.source.name} material={this.props.material} />
+                            <NewsItem title={element?.title ? element?.title > 50 ? element?.title : element?.title.slice(0, 70) : "  "}
+                                description={element?.description ? element?.description > 88 ? element?.description : element?.description.slice(0, 100) + "..." : " "}
+                                imageUrl={element?.urlToImage} newsUrl={element?.url} date={element?.publishedAt} source={element?.source?.name} material={this.props.material} />
                         </div>
                     })}
                 </div>

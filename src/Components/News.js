@@ -156,12 +156,12 @@ export class News extends Component {
                 {this.state.loading && <Spinner />}
                 <div className="row">
                     {!this.state.loading && this.state?.articles?.map((element) => {
-                        console.log(this.state, ("State"));
+                        console.log(this.state, ("State"),);
                         console.log(this.state.articles,"Article");
 
                         return <div className='col-md-4 d-flex justify-content-centre' key={element.url} >
-                            <NewsItem title={element?.title ? element?.title > 50 ? element?.title : element?.title.slice(0, 70) : "  "}
-                                description={element?.description ? element?.description > 88 ? element?.description : element?.description.slice(0, 100) + "..." : " "}
+                            <NewsItem title={element?.title.slice(0, 40)+"..."}
+                                description={element?.description ? element?.description.slice(0, 100) + "..." : " "}
                                 imageUrl={element?.urlToImage} newsUrl={element?.url} date={element?.publishedAt} source={element?.source?.name} material={this.props.material} />
                         </div>
                     })}
